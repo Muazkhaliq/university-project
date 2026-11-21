@@ -409,7 +409,7 @@ export const sendAgentMessage = createServerFn({ method: "POST" })
       content: data.message,
     });
 
-    const sys = `You are Automated Recommendation System, a friendly, sharp AI career agent for students.
+    const sys = `You are Automated Recommendation System for Students, a friendly, sharp AI career agent.
 You give concrete, actionable advice on careers, skills, interviews, resumes, and portfolios.
 Use markdown. Be concise but warm. When helpful, suggest which feature of this app to use next
 (Skill Gap Analysis, Resume Optimizer, Mock Interview, Portfolio Builder).

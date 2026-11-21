@@ -10,9 +10,9 @@ import { FileText, Loader2, CheckCircle2, AlertTriangle, ShieldCheck, ShieldAler
 export const Route = createFileRoute("/_authenticated/resume")({
   head: () => ({
     meta: [
-      { title: "Resume Optimizer · Automated Recommendation System" },
+      { title: "Resume Optimizer · Automated Recommendation System for Students" },
       { name: "description", content: "ATS scoring and recruiter-grade rewrite suggestions." },
-      { property: "og:title", content: "Resume Optimizer · Automated Recommendation System" },
+      { property: "og:title", content: "Resume Optimizer · Automated Recommendation System for Students" },
       { property: "og:description", content: "Get an ATS score, keyword gaps, and rewritten bullets." },
     ],
   }),

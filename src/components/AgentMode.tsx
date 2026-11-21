@@ -131,7 +131,7 @@ function AgentModal({ onClose }: { onClose: () => void }) {
               <Sparkles className="h-4 w-4" />
             </div>
             <div>
-              <div className="text-sm font-semibold">Automated Recommendation System — Voice Career Counselor</div>
+              <div className="text-sm font-semibold">Automated Recommendation System for Students — Voice Career Counselor</div>
               <div className="text-xs text-muted-foreground">English & Urdu · one question at a time</div>
             </div>
           </div>
@@ -142,7 +142,7 @@ function AgentModal({ onClose }: { onClose: () => void }) {
           {turns.length === 0 && (
             <div className="grid place-items-center py-8 text-sm text-muted-foreground">
               <Loader2 className="mb-2 h-5 w-5 animate-spin" />
-              Automated Recommendation System is getting ready…
+              Automated Recommendation System for Students is getting ready…
             </div>
           )}
           {turns.map((t, i) => (
@@ -165,7 +165,7 @@ function AgentModal({ onClose }: { onClose: () => void }) {
           <div className="text-xs text-muted-foreground">
             {status === "recording" && <span className="text-destructive">● Listening…</span>}
             {status === "thinking" && "Thinking…"}
-            {status === "speaking" && "Automated Recommendation System is speaking…"}
+            {status === "speaking" && "Automated Recommendation System for Students is speaking…"}
             {status === "idle" && !recommendation && "Tap the mic to answer"}
             {recommendation && "Conversation complete"}
           </div>

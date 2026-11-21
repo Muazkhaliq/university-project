@@ -10,9 +10,9 @@ import { Brain, Loader2, TrendingUp } from "lucide-react";
 export const Route = createFileRoute("/_authenticated/skills")({
   head: () => ({
     meta: [
-      { title: "Skill Gap Analysis · Automated Recommendation System" },
+      { title: "Skill Gap Analysis · Automated Recommendation System for Students" },
       { name: "description", content: "AI-powered skill gap analysis for your target role." },
-      { property: "og:title", content: "Skill Gap Analysis · Automated Recommendation System" },
+      { property: "og:title", content: "Skill Gap Analysis · Automated Recommendation System for Students" },
       { property: "og:description", content: "Predict which concepts you'll struggle with — and get a learning path." },
     ],
   }),
@@ -50,7 +50,7 @@ function SkillsPage() {
   const latest = (mut.data ?? history?.[0]) as { analysis: Analysis; target_role: string; overall_score: number } | undefined;
 
   return (
-    <PageShell title="Skill Gap Analysis" subtitle="Tell Automated Recommendation System what you know and what you want to be — get a predicted-struggle map and learning path.">
+    <PageShell title="Skill Gap Analysis" subtitle="Tell Automated Recommendation System for Students what you know and what you want to be — get a predicted-struggle map and learning path.">
       <div className="grid gap-6 lg:grid-cols-2">
         <div className="rounded-2xl border border-border bg-card p-6 shadow-panel">
           <h2 className="text-lg font-semibold">Run an assessment</h2>

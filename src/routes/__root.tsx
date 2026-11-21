@@ -71,13 +71,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Automated Recommendation System — AI Career Ecosystem for Students" },
+      { title: "Automated Recommendation System for Students — AI Career Ecosystem" },
       {
         name: "description",
         content:
-          "Automated Recommendation System is your AI career agent: skill gap analysis, resume ATS scoring, mock interviews, and portfolio building — all in one place.",
+          "Automated Recommendation System for Students is your AI career agent: skill gap analysis, resume ATS scoring, mock interviews, and portfolio building — all in one place.",
       },
-      { property: "og:title", content: "Automated Recommendation System — AI Career Ecosystem for Students" },
+      { property: "og:title", content: "Automated Recommendation System for Students — AI Career Ecosystem" },
       {
         property: "og:description",
         content: "Career coaching, resume scoring, mock interviews and portfolio building — powered by AI.",

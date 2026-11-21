@@ -10,9 +10,9 @@ import { PlayCircle, Loader2, CheckCircle2, Circle, ExternalLink, Sparkles } fro
 export const Route = createFileRoute("/_authenticated/courses")({
   head: () => ({
     meta: [
-      { title: "Courses · Automated Recommendation System" },
+      { title: "Courses · Automated Recommendation System for Students" },
       { name: "description", content: "Curated YouTube videos and free courses ranked by relevance." },
-      { property: "og:title", content: "Courses · Automated Recommendation System" },
+      { property: "og:title", content: "Courses · Automated Recommendation System for Students" },
       { property: "og:description", content: "Learn by topic. Then take an AI quiz to lock it in." },
     ],
   }),

@@ -25,9 +25,9 @@ import {
 export const Route = createFileRoute("/_authenticated/agent")({
   head: () => ({
     meta: [
-      { title: "AI Agent · Automated Recommendation System" },
+      { title: "AI Agent · Automated Recommendation System for Students" },
       { name: "description", content: "Chat or talk with your AI career mentor." },
-      { property: "og:title", content: "AI Agent · Automated Recommendation System" },
+      { property: "og:title", content: "AI Agent · Automated Recommendation System for Students" },
       { property: "og:description", content: "Chat or talk with your AI career mentor." },
     ],
   }),

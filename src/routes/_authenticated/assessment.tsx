@@ -27,9 +27,9 @@ import { AgentModeButton } from "@/components/AgentMode";
 export const Route = createFileRoute("/_authenticated/assessment")({
   head: () => ({
     meta: [
-      { title: "Skills Assessment · Automated Recommendation System" },
+      { title: "Skills Assessment · Automated Recommendation System for Students" },
       { name: "description", content: "Baseline your current knowledge with an AI-graded questionnaire." },
-      { property: "og:title", content: "Skills Assessment · Automated Recommendation System" },
+      { property: "og:title", content: "Skills Assessment · Automated Recommendation System for Students" },
       { property: "og:description", content: "10-question adaptive baseline for your target role." },
     ],
   }),
@@ -145,11 +145,11 @@ function AssessmentPage() {
   });
 
   return (
-    <PageShell title="Skills Assessment" subtitle="A quick baseline questionnaire — Automated Recommendation System grades it and detects your level.">
+    <PageShell title="Skills Assessment" subtitle="A quick baseline questionnaire — Automated Recommendation System for Students grades it and detects your level.">
       <div className="mb-6 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-border bg-gradient-to-br from-ember/5 to-transparent p-4">
         <div>
           <div className="text-sm font-semibold">Prefer to talk it out?</div>
-          <p className="text-xs text-muted-foreground">Have a natural voice chat with Automated Recommendation System in English or Urdu — she'll recommend a field for you.</p>
+          <p className="text-xs text-muted-foreground">Have a natural voice chat with Automated Recommendation System for Students in English or Urdu — she'll recommend a field for you.</p>
         </div>
         <AgentModeButton />
       </div>

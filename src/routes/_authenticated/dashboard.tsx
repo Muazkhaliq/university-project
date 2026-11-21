@@ -16,9 +16,9 @@ import {
 export const Route = createFileRoute("/_authenticated/dashboard")({
   head: () => ({
     meta: [
-      { title: "Dashboard · Automated Recommendation System" },
+      { title: "Dashboard · Automated Recommendation System for Students" },
       { name: "description", content: "Your career progress at a glance." },
-      { property: "og:title", content: "Dashboard · Automated Recommendation System" },
+      { property: "og:title", content: "Dashboard · Automated Recommendation System for Students" },
       { property: "og:description", content: "Track your skill gaps, resumes, interviews, and portfolio." },
     ],
   }),

@@ -30,9 +30,9 @@ import {
 export const Route = createFileRoute("/_authenticated/roadmap")({
   head: () => ({
     meta: [
-      { title: "Roadmap · Automated Recommendation System" },
+      { title: "Roadmap · Automated Recommendation System for Students" },
       { name: "description", content: "Your personalized learning roadmap with expandable phases, curated resources, and inline quizzes." },
-      { property: "og:title", content: "Roadmap · Automated Recommendation System" },
+      { property: "og:title", content: "Roadmap · Automated Recommendation System for Students" },
       { property: "og:description", content: "A step-by-step path to your target role with sub-topics and progress tracking." },
     ],
   }),

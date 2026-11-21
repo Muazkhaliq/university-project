@@ -8,9 +8,9 @@ import logoMark from "@/assets/logo-mark.png";
 export const Route = createFileRoute("/auth")({
   head: () => ({
     meta: [
-      { title: "Sign in · Automated Recommendation System" },
+      { title: "Sign in · Automated Recommendation System for Students" },
       { name: "description", content: "Sign in to your AI career ecosystem." },
-      { property: "og:title", content: "Sign in · Automated Recommendation System" },
+      { property: "og:title", content: "Sign in · Automated Recommendation System for Students" },
       { property: "og:description", content: "Access your AI career agent, resume tools, and mock interviews." },
     ],
   }),
@@ -99,8 +99,8 @@ function AuthPage() {
     <div className="grain-bg grid min-h-screen place-items-center px-4">
       <div className="w-full max-w-md">
         <a href="/" className="mb-6 flex items-center justify-center gap-2">
-          <img src={logoMark} alt="Automated Recommendation System" className="h-9 w-9 object-contain" />
-          <span className="display text-xl">Automated Recommendation System</span>
+          <img src={logoMark} alt="Automated Recommendation System for Students" className="h-9 w-9 object-contain" />
+          <span className="display text-xl">Automated Recommendation System for Students</span>
         </a>
         <div className="rounded-2xl border border-border bg-card p-8 shadow-panel">
           <h1 className="display text-3xl">

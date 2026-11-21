@@ -1,4 +1,4 @@
-# Automated Recommendation System
+# Automated Recommendation System for Students
 
 An AI career platform for students. It helps a student find the right career field, close skill gaps, build a CV and portfolio, practise interviews, and track progress, all in one place.
 

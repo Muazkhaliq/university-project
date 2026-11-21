@@ -3,10 +3,10 @@ import { createFileRoute } from "@tanstack/react-router";
 export const Route = createFileRoute("/privacy")({
   head: () => ({
     meta: [
-      { title: "Privacy Policy · Automated Recommendation System" },
+      { title: "Privacy Policy · Automated Recommendation System for Students" },
       {
         name: "description",
-        content: "How Automated Recommendation System collects, uses and protects your data.",
+        content: "How Automated Recommendation System for Students collects, uses and protects your data.",
       },
     ],
   }),
@@ -28,7 +28,7 @@ function PrivacyPage() {
         <div className="mt-6 space-y-6 text-sm leading-relaxed">
           <section>
             <p>
-              Automated Recommendation System ("ARS", "we") is a university project that helps
+              Automated Recommendation System for Students ("ARS", "we") is a university project that helps
               students plan their careers. This page explains what data we collect, why, and how
               you can control it.
             </p>

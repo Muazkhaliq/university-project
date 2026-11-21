@@ -7,18 +7,18 @@ import {
 } from "lucide-react";
 import logoMark from "@/assets/logo-mark.png";
 
-const NAME = "Automated Recommendation System";
+const NAME = "Automated Recommendation System for Students";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: `${NAME} — AI Career Guidance for Students` },
+      { title: `${NAME} — AI Career Guidance` },
       {
         name: "description",
         content:
           "Find the right career path, close your skill gaps and get job-ready with one AI mentor. Built for students.",
       },
-      { property: "og:title", content: `${NAME} — AI Career Guidance for Students` },
+      { property: "og:title", content: `${NAME} — AI Career Guidance` },
       { property: "og:description", content: "Find your path, build your skills, land your first role." },
     ],
   }),
@@ -85,10 +85,11 @@ function Landing() {
       <section className="relative z-10 mx-auto max-w-4xl px-4 pb-16 pt-14 text-center sm:px-6 sm:pt-20">
         <div className="inline-flex items-center gap-2 rounded-full border border-border bg-card/70 px-3 py-1 text-xs text-muted-foreground backdrop-blur">
           <span className="h-1.5 w-1.5 rounded-full bg-ember" />
-          AI career guidance for students
+          AI-powered career guidance
         </div>
         <h1 className="display mt-6 text-4xl leading-[1.05] sm:text-6xl md:text-7xl">
-          <span className="brand-gradient-text">{NAME}</span>
+          <span className="brand-gradient-text">Automated Recommendation System</span>
+          <span className="mt-2 block text-3xl text-foreground sm:text-5xl md:text-6xl">for Students</span>
         </h1>
         <p className="mx-auto mt-5 max-w-xl text-base text-muted-foreground sm:text-lg">
           Find the right career path, close your skill gaps and get job-ready, with one AI mentor that knows your goals.

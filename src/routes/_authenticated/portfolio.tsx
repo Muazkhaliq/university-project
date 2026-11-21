@@ -10,9 +10,9 @@ import { Github, Loader2, Star, ExternalLink } from "lucide-react";
 export const Route = createFileRoute("/_authenticated/portfolio")({
   head: () => ({
     meta: [
-      { title: "Portfolio Builder · Automated Recommendation System" },
+      { title: "Portfolio Builder · Automated Recommendation System for Students" },
       { name: "description", content: "Turn your GitHub into a polished portfolio in seconds." },
-      { property: "og:title", content: "Portfolio Builder · Automated Recommendation System" },
+      { property: "og:title", content: "Portfolio Builder · Automated Recommendation System for Students" },
       { property: "og:description", content: "AI-generated descriptions for your repos." },
     ],
   }),
@@ -44,7 +44,7 @@ function PortfolioPage() {
   const portfolio = (mut.data ?? existing) as Portfolio | undefined;
 
   return (
-    <PageShell title="Portfolio Builder" subtitle="Point Automated Recommendation System at your GitHub username — get a polished, recruiter-ready showcase.">
+    <PageShell title="Portfolio Builder" subtitle="Point Automated Recommendation System for Students at your GitHub username — get a polished, recruiter-ready showcase.">
       <div className="mb-6 flex flex-wrap gap-2 rounded-2xl border border-border bg-card p-4 shadow-panel">
         <div className="flex flex-1 items-center gap-2 rounded-lg border border-border bg-background px-3">
           <Github className="h-4 w-4 text-muted-foreground"/>

@@ -10,9 +10,9 @@ import { Save, Loader2, Plus, Trash2, Printer, FileDown, FileText } from "lucide
 export const Route = createFileRoute("/_authenticated/cv")({
   head: () => ({
     meta: [
-      { title: "CV Builder · Automated Recommendation System" },
+      { title: "CV Builder · Automated Recommendation System for Students" },
       { name: "description", content: "Build a clean, ATS-friendly CV with Tailwind styling." },
-      { property: "og:title", content: "CV Builder · Automated Recommendation System" },
+      { property: "og:title", content: "CV Builder · Automated Recommendation System for Students" },
       { property: "og:description", content: "Structured CV editor with live preview." },
     ],
   }),
@@ -100,7 +100,7 @@ function CvPage() {
     try {
       const el = document.getElementById("cv-preview");
       if (!el) throw new Error("Preview not found");
-      const html = `<!DOCTYPE html><html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"><head><meta charset="utf-8"><title>${title}</title><style>body{font-family:Calibri,Automated Recommendation Systeml,sans-serif;color:#0f172a;} h1{font-size:26pt;margin:0 0 4pt;} h2{font-size:11pt;text-transform:uppercase;letter-spacing:1.5pt;color:#64748b;margin:14pt 0 4pt;border-bottom:1px solid #e2e8f0;padding-bottom:2pt;} ul{margin:4pt 0 4pt 18pt;} .meta{color:#64748b;font-size:10pt;} .row{display:flex;justify-content:space-between;} .muted{color:#64748b;} .tag{display:inline-block;background:#f1f5f9;padding:2pt 6pt;margin:2pt;border-radius:4pt;font-size:9pt;}</style></head><body>${el.innerHTML}</body></html>`;
+      const html = `<!DOCTYPE html><html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"><head><meta charset="utf-8"><title>${title}</title><style>body{font-family:Calibri,Automated Recommendation System for Studentsl,sans-serif;color:#0f172a;} h1{font-size:26pt;margin:0 0 4pt;} h2{font-size:11pt;text-transform:uppercase;letter-spacing:1.5pt;color:#64748b;margin:14pt 0 4pt;border-bottom:1px solid #e2e8f0;padding-bottom:2pt;} ul{margin:4pt 0 4pt 18pt;} .meta{color:#64748b;font-size:10pt;} .row{display:flex;justify-content:space-between;} .muted{color:#64748b;} .tag{display:inline-block;background:#f1f5f9;padding:2pt 6pt;margin:2pt;border-radius:4pt;font-size:9pt;}</style></head><body>${el.innerHTML}</body></html>`;
       const blob = new Blob(["\ufeff", html], { type: "application/msword" });
       const url = URL.createObjectURL(blob);
       const a = document.createElement("a");

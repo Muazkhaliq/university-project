@@ -10,9 +10,9 @@ import { Mic, Send, Loader2, CheckCircle2 } from "lucide-react";
 export const Route = createFileRoute("/_authenticated/interview")({
   head: () => ({
     meta: [
-      { title: "Mock Interview · Automated Recommendation System" },
+      { title: "Mock Interview · Automated Recommendation System for Students" },
       { name: "description", content: "Live AI mock interviews with a full evaluation report." },
-      { property: "og:title", content: "Mock Interview · Automated Recommendation System" },
+      { property: "og:title", content: "Mock Interview · Automated Recommendation System for Students" },
       { property: "og:description", content: "Practice technical or behavioral interviews and get AI feedback." },
     ],
   }),
@@ -81,7 +81,7 @@ function InterviewPage() {
 
   if (!session) {
     return (
-      <PageShell title="Mock Interview" subtitle="Pick a role and interview style — Automated Recommendation System will conduct a real interview and grade you.">
+      <PageShell title="Mock Interview" subtitle="Pick a role and interview style — Automated Recommendation System for Students will conduct a real interview and grade you.">
         <div className="mx-auto max-w-lg rounded-2xl border border-border bg-card p-6 shadow-panel">
           <label className="block">
             <div className="mb-1 text-xs font-medium text-muted-foreground">Role</div>

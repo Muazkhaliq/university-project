@@ -11,9 +11,9 @@ import { Briefcase, Loader2, ExternalLink, MapPin, Building2, Clock, DollarSign,
 export const Route = createFileRoute("/_authenticated/jobs")({
   head: () => ({
     meta: [
-      { title: "Jobs · Automated Recommendation System" },
+      { title: "Jobs · Automated Recommendation System for Students" },
       { name: "description", content: "Job matches filtered by your assessed skill level with direct apply links." },
-      { property: "og:title", content: "Jobs · Automated Recommendation System" },
+      { property: "og:title", content: "Jobs · Automated Recommendation System for Students" },
       { property: "og:description", content: "AI-curated openings with LinkedIn, Indeed & Glassdoor apply links." },
     ],
   }),

@@ -141,7 +141,7 @@ type AgentTurn = {
   };
 };
 
-const SYS = `You are Automated Recommendation System, a warm, professional AI career counselor conducting a spoken voice conversation with a student.
+const SYS = `You are Automated Recommendation System for Students, a warm, professional AI career counselor conducting a spoken voice conversation with a student.
 
 RULES:
 - Detect the user's language from their most recent message. Reply in the SAME language they used. Support English and Urdu (Roman Urdu is also Urdu).
@@ -172,7 +172,7 @@ export const agentConverse = createServerFn({ method: "POST" })
     if (data.messages.length === 0) {
       messages.push({
         role: "user",
-        content: "(The user just started the session. Greet them warmly in English, introduce yourself as Automated Recommendation System their career counselor in one short sentence, and ask what they are currently doing — study or work. Keep it under 2 sentences.)",
+        content: "(The user just started the session. Greet them warmly in English, introduce yourself as Automated Recommendation System for Students their career counselor in one short sentence, and ask what they are currently doing — study or work. Keep it under 2 sentences.)",
       });
     }
     const result = await chatJSON<AgentTurn>({

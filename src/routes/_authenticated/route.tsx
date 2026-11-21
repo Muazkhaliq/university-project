@@ -75,7 +75,7 @@ function AuthedLayout() {
       <aside className="hidden w-64 shrink-0 flex-col overflow-y-auto border-r border-border bg-sidebar p-4 md:flex">
         <Link to="/dashboard" className="mb-8 flex items-center gap-2 px-2">
           <img src={logoMark} alt="" className="h-9 w-9 shrink-0 object-contain" />
-          <span className="display text-lg leading-tight">Automated Recommendation System</span>
+          <span className="display text-base leading-tight">Automated Recommendation System for Students</span>
         </Link>
         <nav className="flex flex-col gap-1">
           {nav.map((item) => {

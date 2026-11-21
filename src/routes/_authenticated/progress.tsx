@@ -10,9 +10,9 @@ import { toast } from "sonner";
 export const Route = createFileRoute("/_authenticated/progress")({
   head: () => ({
     meta: [
-      { title: "Progress · Automated Recommendation System" },
+      { title: "Progress · Automated Recommendation System for Students" },
       { name: "description", content: "Your skill trajectory, streak, and weak concepts." },
-      { property: "og:title", content: "Progress · Automated Recommendation System" },
+      { property: "og:title", content: "Progress · Automated Recommendation System for Students" },
       { property: "og:description", content: "Track improvement over time." },
     ],
   }),
